@@ -3,23 +3,42 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GTA VI trophy checklist</title>
+<title>Leonida Trophy Atlas — GTA VI Trophy Guide &amp; Tracker</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>
-  <h1>GTA VI trophy checklist</h1>
-  <p id="progress">0 of 55 earned</p>
+<header class="masthead">
+  <div>
+    <h1>Leonida Trophy Atlas</h1>
+    <p class="tagline">The offline guide &amp; tracker for all 55 Grand Theft Auto VI PlayStation 5 trophies — official names, descriptions and grades, a guide in our own words for every one, and its sources named.</p>
+  </div>
+  <div id="progress"></div>
 </header>
-<div class="controls">
-  <label>Grade <select id="grade"><option value="all">All</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+
+<nav class="toolbar" aria-label="Tracker controls">
+  <div class="views">
+    <button type="button" data-view="checklist" class="active">Checklist</button>
+    <button type="button" data-view="roadmap">Platinum roadmap</button>
+    <button type="button" data-view="missables">Missables</button>
+  </div>
+  <label>Kind <select id="kind"></select></label>
+  <label>Grade <select id="grade"></select></label>
+  <label>Search <input id="search" type="search" placeholder="heist, cards, Cal…"></label>
+  <label class="check"><input id="spoiler" type="checkbox"> Spoiler-safe: hide story trophies until earned</label>
+  <label class="check"><input id="missing" type="checkbox"> Only unearned</label>
   <button id="export" type="button">Export progress</button>
-  <label class="import">Import progress <input id="import" type="file" accept="application/json"></label>
-</div>
-<table>
-  <thead><tr><th>Earned</th><th>Trophy</th><th>Grade</th><th>How to get it</th></tr></thead>
-  <tbody id="rows"></tbody>
-</table>
+  <label class="import">Import progress <input id="import-file" type="file" accept="application/json"></label>
+</nav>
+
+<main class="layout">
+  <section id="list" aria-label="Trophies"></section>
+  <aside id="detail" aria-label="Trophy guide"></aside>
+</main>
+
+<footer>
+  <p>Trophy names, descriptions and grades are the official PlayStation list, as published. Guides are this app's own words; each names its sources. Missable flags are inferred from the official descriptions. This app works offline and stores progress only in your browser.</p>
+</footer>
+
 <script type="module" src="app.js"></script>
 </body>
 </html>

@@ -1,0 +1,9 @@
+GitHub About — to set when the repository is created (do not submit before the user approves)
+
+Repository name (planned): gta6-trophy-guide-01-leonida-atlas
+Owner: xwb529
+Description: Leonida Trophy Atlas: an offline guide & tracker for all 55 GTA VI PS5 trophies — checklist saved in the browser, filters, spoiler-safe mode, platinum roadmap and cited guides.
+Website: https://make.fun/bounty/gta6-trophy-guide-01
+Topics: makefun, ai-agents, bounties, games
+Visibility: Public
+License: MIT (LICENSE file at root, Copyright (c) 2026 xwb529)
